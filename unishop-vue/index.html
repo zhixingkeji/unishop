@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <base href="/">
+    <script>
+      var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') ||
+        CSS.supports('top: constant(a)'))
+      document.write(
+        '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
+        (coverSupport ? ', viewport-fit=cover' : '') + '" />')
+    </script>
+    <title></title>
+    <!--preload-links-->
+    <!--app-context-->
+
+<!--      <link rel="stylesheet" href="./src/static/theme/dark.scss">-->
+  </head>
+
+  <body>
+
+    <div id="app"><!--app-html-->
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+  <style>
+
+  </style>
+</html>
+
+
+
+<!--主题变换第三步, -->
+<!--<script>-->
+<!--    //在js添加默认引入的dark.css,-->
+<!--    // 如果不引入，ivew自带的样式会覆盖在html中引入的dark.css,所以需要在js重新引入，-->
+<!--    // 用来覆盖ivew的默认样式-->
+<!--    var link = document.createElement("link");-->
+<!--    link.rel = "stylesheet";-->
+<!--    link.type = "text/css";-->
+<!--    link.href = "./src/static/theme/dark.scss";-->
+<!--    var head = document.getElementsByTagName("head")[0];-->
+<!--    head.appendChild(link);-->
+<!--    //监听sessionStorage切换主题-->
+<!--    window.addEventListener('setItem', () => {-->
+<!--        var themeColor = sessionStorage.getItem('themeColor');-->
+<!--        let url = "./src/static/theme/" + themeColor + ".scss"-->
+<!--        changeStyles(url);-->
+<!--    })-->
+
+<!--    function changeStyles(url) {-->
+<!--        var links = document.getElementsByTagName("link")-->
+<!--        console.log(links)-->
+<!--        //替换之前引入的css-->
+<!--        if (links.length != 0) {-->
+<!--            for (var i = 0; i < links.length; i++) {-->
+<!--                // links[i].parentNode.removeChild(links[i]);-->
+<!--                links[i].href = url-->
+<!--            }-->
+<!--        }-->
+<!--        var links = document.getElementsByTagName("link")-->
+<!--        //console.log(links)-->
+
+<!--    }-->
+
+<!--</script>-->

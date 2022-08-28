@@ -1,0 +1,91 @@
+{
+	"pages": [
+		//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+
+		//订单
+		//钱包
+
+
+		//地址管理
+		{
+			"path": "pages/UserView/address"
+		},
+
+
+		//消息页
+		{
+			"path": "pages/UserView/message"
+		},
+
+		//用户信息
+		{
+			"path": "pages/UserView/userinfo"
+		},
+
+		//设置
+		{
+			"path": "pages/UserView/setting"
+		},
+
+		//首页
+		{
+			"path": "pages/HomeView/HomeView",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		},
+		//购物车
+		{
+			"path": "pages/CartView/CartView",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		},
+		//分类
+		{
+			"path": "pages/ClassifyView/ClassifyView",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		},
+		//我的
+		{
+			"path": "pages/UserView/UserView",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		},
+
+		//详情
+		{
+			"path": "pages/DetailView/DetailView"
+
+		},
+
+		//搜索
+		{
+			"path": "pages/SearchView/SearchView"
+
+		},
+
+
+
+
+
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+
+		//关闭原生顶部导航栏
+		"navigationStyle": "custom",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"autoscan": true,
+	"custom": {
+		"^van-(.*)": "@/wxcomponents/vant/$1/index.vue"
+		// 匹配wxcomponents目录内的vue文件
+
+	}
+}
